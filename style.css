@@ -1,0 +1,37 @@
+:root {
+  --primary-color: #f4effa;
+  --secondary-color: #5a31ff;
+  --accent-color: #7161ef;
+}
+* {
+  color: var(--accent-color);
+}
+/* body {
+  background-image: url(images/bg.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+} */
+
+nav {
+  height: 5rem;
+}
+.bi {
+  cursor: pointer;
+  font-size: xx-large;
+  color: var(--accent-color);
+  transition: border 0.2s ease-in;
+}
+.bi:hover {
+  color: var(--secondary-color);
+}
+.active {
+  color: var(--secondary-color);
+  border-bottom: 3px solid var(--accent-color);
+  border-radius: 3px;
+}
+nav > div {
+  padding-inline: 3rem;
+  box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
+    rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+}
