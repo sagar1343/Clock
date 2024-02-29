@@ -6,12 +6,12 @@
 * {
   color: var(--accent-color);
 }
-/* body {
-  background-image: url(images/bg.svg);
+body {
+  /* background-image: url(images/bg.svg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: cover;
-} */
+  background-size: cover; */
+}
 
 nav {
   height: 5rem;
@@ -34,4 +34,8 @@ nav > div {
   padding-inline: 3rem;
   box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px,
     rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+}
+
+.active-content {
+  display: block !important;
 }
