@@ -6,12 +6,6 @@
 * {
   color: var(--accent-color);
 }
-body {
-  /* background-image: url(images/bg.svg);
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover; */
-}
 
 nav {
   height: 5rem;
@@ -38,4 +32,14 @@ nav > div {
 
 .active-content {
   display: block !important;
+}
+
+.btn-secondary {
+  background-color: var(--accent-color);
+}
+.btn-secondary:hover,
+.btn-secondary:focus,
+.btn-secondary:focus-visible {
+  background-color: var(--secondary-color);
+  box-shadow: none;
 }
