@@ -18,17 +18,17 @@
     <link rel="stylesheet" href="style.css" />
   </head>
 
-  <body>
+  <body class="p-2">
     <div class="main">
-      <div id="clock-content" class="vh-100 d-none nav-content active-content">
+      <div id="clock-content" class="d-none nav-content active-content">
         <div class="vh-100 d-flex justify-content-center align-items-center">
           <h1 class="display-1 fw-bold shadow-md p-5"></h1>
         </div>
       </div>
-      <div id="stopwatch-content" class="vh-100 d-none nav-content">
+      <div id="stopwatch-content" class="d-none nav-content">
         <div class="vh-100 d-flex justify-content-center align-items-center">
           <div class="d-flex flex-column align-items-center p-5 shadow-md">
-            <h1 class="display-1 fw-bold">00:00:00:000</h1>
+            <h1 class="display-1 fw-bold my-4">00:00:00:000</h1>
             <div>
               <button id="stopwatch-start" class="btn btn-lg btn-secondary">
                 Start
@@ -43,7 +43,7 @@
           </div>
         </div>
       </div>
-      <div id="timer-content" class="vh-100 d-none nav-content">
+      <div id="timer-content" class="d-none nav-content">
         <div class="vh-100 d-flex justify-content-center align-items-center">
           <div class="d-flex flex-column align-items-center p-5 shadow-md">
             <input
@@ -52,8 +52,8 @@
               class="form-control form-control-lg text-secondary"
               step="1"
               value="00:00:00" />
-            <h1 class="display-1 fw-bold">00:00:00</h1>
-            <div>
+            <h1 class="display-1 fw-bold my-4">00:00:00</h1>
+            <div class="d-flex flex-nowrap gap-1">
               <button id="timer-start" class="btn btn-lg btn-secondary">
                 Start
               </button>
@@ -67,9 +67,32 @@
           </div>
         </div>
       </div>
-      <div id="alarm-content" class="vh-100 d-none nav-content">
-        <div class="vh-100 d-flex justify-content-center align-items-center">
-          <h1>Alarm</h1>
+      <div id="alarm-content" class="d-none nav-content">
+        <div
+          class="vh-100 d-flex flex-column justify-content-center align-items-center">
+          <div
+            class="d-flex flex-column gap-4 align-items-center p-5 shadow-md">
+            <input
+              type="datetime-local"
+              id="alarm-input"
+              class="form-control form-control-lg text-secondary"
+              value="" />
+            <div class="d-flex gap-3">
+              <button
+                id="alarm-button"
+                class="btn btn-lg btn-secondary text-nowrap">
+                Add Alarm
+              </button>
+              <button
+                id="clear-button"
+                class="btn btn-lg btn-secondary text-nowrap">
+                Clear
+              </button>
+            </div>
+            <h1 class="display-1 fw-bold"></h1>
+            <ul
+              class="alarm-container d-flex gap-2 justify-content-center align-items-center flex-wrap mt-4 ps-0"></ul>
+          </div>
         </div>
       </div>
     </div>
