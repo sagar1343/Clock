@@ -37,9 +37,7 @@ nav > div {
 .btn-secondary {
   background-color: var(--accent-color);
 }
-.btn-secondary:hover,
-.btn-secondary:focus,
-.btn-secondary:focus-visible {
+.btn-secondary:hover {
   background-color: var(--secondary-color);
   box-shadow: none;
 }
